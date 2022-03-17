@@ -17,6 +17,13 @@
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
+		<!-- Vault dependency to enable vault in our application -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-vault-config</artifactId>
+			<version>3.0.5</version>
+		</dependency>
+
 		<!-- Actuator dependency to trigger the configuration refresh -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
