@@ -17,6 +17,13 @@
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
+		<!-- Spring Cloud bus -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
 		<!-- Vault dependency to enable vault in our application -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
