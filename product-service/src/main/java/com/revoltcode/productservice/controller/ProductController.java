@@ -21,7 +21,7 @@ public class ProductController {
         return productRepository.findAll();
     }
 
-    @GetMapping
+    @PostMapping("/save")
     @ResponseStatus(HttpStatus.CREATED)
     public void createProduct(@RequestBody Product product){
         productRepository.save(product);
